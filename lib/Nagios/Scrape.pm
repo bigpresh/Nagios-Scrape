@@ -115,7 +115,7 @@ sub get_service_status {
     my $ua   = LWP::UserAgent->new;
     my $req =
       HTTP::Request->new( GET => $self->{url}
-          . '?host=all&noheader=yes&servicestatustypes='
+          . '?host=all&noheader=yes&limit=0&servicestatustypes='
           . $self->{service_state} );
     $req->authorization_basic( $self->{username}, $self->{password} );
     my $response = $ua->request($req);
@@ -142,8 +142,8 @@ sub get_host_status {
     my $ua   = LWP::UserAgent->new;
     my $req =
       HTTP::Request->new( GET => $self->{url}
-          . '?hostgroup=all&noheader=yes&style=hostdetail&hoststatustypes='
-          . $self->{host_state} );
+          . '?hostgroup=all&noheader=yes&limit=0&style=hostdetail'
+          . '&hoststatustypes=' . $self->{host_state} );
     $req->authorization_basic( $self->{username}, $self->{password} );
     my $response = $ua->request($req);
 
