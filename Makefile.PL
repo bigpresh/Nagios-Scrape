@@ -8,7 +8,7 @@ WriteMakefile(
     'VERSION_FROM' => 'lib/Nagios/Scrape.pm',
     'ABSTRACT_FROM' => 'lib/Nagios/Scrape.pm',
     'AUTHOR'        => 'David Precious <davidp@preshweb.co.uk>',
-    'LICENCE'       => 'GPL_3',
+    'LICENSE'       => 'GPL_3',
     'PREREQ_PM'    => {
         'Test::More'      => 0,
         'Error'           => 0,
