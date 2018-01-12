@@ -1,5 +1,11 @@
 Revision history for Nagios-Scrape
 
+0.04    2018-01-12
+        David Precious (BIGPRESH) taking over maintainership, with thanks to
+        original author Joe Topjian (JTOPJIAN)
+
+        Fix RT #124059 - see all services, not just the ones on the first page
+
 0.03    July 30, 2010
         Added pod documentation to get pod-coverage tests to pass
 
