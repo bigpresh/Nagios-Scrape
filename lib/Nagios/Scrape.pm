@@ -13,7 +13,7 @@ Nagios::Scrape - Scrapes and Parses the status.cgi page of a Nagios installation
 
 =head1 VERSION
 
-Version 0.03
+Version 0.04
 
 =cut
 
